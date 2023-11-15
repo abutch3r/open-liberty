@@ -37,6 +37,8 @@ jobs:
         cp -r swagger-ui-src/src/core/plugins/json-schema-2020-12/components* src/style/core/plugins/json-schema-2020-12/components
         cp -r swagger-ui-src/src/core/plugins/oas31/components* src/style/core/plugins/oas31/components
         rm -r swagger-ui-src
+        ls src/style/core/plugins/json-schema-2020-12/components
+        ls src/style/core/plugins/oas31/components
     - name: Build OpenAPI UI
       run: npm run build -- --mode=production
     - name: Create Pull Request
