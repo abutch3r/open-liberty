@@ -47,7 +47,7 @@ jobs:
     - name: Build OpenAPI UI
       run: npm run build -- --mode=production
     - name: Commit and push
-      if: ${{ env.GITHUB_REF_NAME != 'integration' }}
+      if: ${{ env.GITHUB_REF_NAME == 'integration' }}
       run: |
         git add .
         git config user.name "$GITHUB_ACTOR"
