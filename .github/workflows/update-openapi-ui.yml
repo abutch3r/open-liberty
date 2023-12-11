@@ -4,6 +4,9 @@ name: Update OpenAPI UI dependencies
 
 on: workflow_dispatch
 
+permissions:
+  pull-requests: write
+
 jobs:
   update-openapi-ui:
     name: Update OpenAPI UI Dependencies
