@@ -62,6 +62,7 @@ public class FIPSTestUtils {
             if (!dir.endsWith("jre")) {
                 dir = dir + "/jre";
             }
+            Log.warning(FIPSTestUtils.class, "Checking Directory "+ dir + "for FIPS directory");
             Set<String> dirs = Stream.of(new File(dir))
                     .filter(File::isDirectory)
                     .map(File::getName)
