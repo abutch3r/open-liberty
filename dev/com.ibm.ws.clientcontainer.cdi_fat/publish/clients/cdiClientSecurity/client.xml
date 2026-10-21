@@ -7,6 +7,7 @@
     </featureManager>
  
    <keyStore id="defaultKeyStore" password="{xor}EzY9Oi0rJg==" /> <!-- pwd: Liberty, expires 1/4/2099 -->
+    <test/>
     
    <application id="appClientSecurity" name="appClientSecurity" type="ear" location="appClientSecurity.ear"/>
    
