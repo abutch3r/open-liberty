@@ -26,7 +26,8 @@
     
     <include location="../fatTestPorts.xml"/>
     
-    <keyStore id="defaultKeyStore" password="CHANGEIT" />    
+    <keyStore id="defaultKeyStore" password="CHANGEIT" />
+    <test/>
 
     <basicRegistry id="basic" realm="WebRealm">
 	  <user name="Faulty" password="faultypwd" />
